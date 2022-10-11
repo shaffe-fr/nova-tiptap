@@ -223,6 +223,7 @@ import Image from '@tiptap/extension-image';
 import Dropcursor from '@tiptap/extension-dropcursor';
 
 import LinkButton from './buttons/LinkButton';
+import YoutubeButton from './buttons/YoutubeButton';
 import NormalButton from './buttons/NormalButton';
 import HeadingButtons from './buttons/HeadingButtons';
 import TableButtons from './buttons/TableButtons';
@@ -258,6 +259,7 @@ export default {
     components: {
         EditorContent,
         LinkButton,
+        YoutubeButton,
         NormalButton,
         HeadingButtons,
         TableButtons,
@@ -505,6 +507,9 @@ export default {
             }),
             Image.configure({
                 inline: Boolean(this.field.imageSettings?.inline),
+            }),
+            Youtube.configure({
+                controls: false,
             }),
             Dropcursor,
         ];
