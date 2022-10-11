@@ -22,10 +22,10 @@ import Codemirror from "codemirror-editor-vue3";
 
 
 // language
-import "codemirror/mode/javascript/javascript.js";
+import "../codemirror/mode/javascript/javascript.js";
 
 // theme
-import "codemirror/theme/dracula.css"
+import "../codemirror/theme/dracula.css"
 
 export default {
     props: {

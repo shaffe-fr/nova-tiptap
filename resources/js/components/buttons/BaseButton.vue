@@ -54,17 +54,12 @@
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-import {
-    faHorizontalRule,
-    faParagraphRtl,
-    faImagePolaroid
-} from '@fortawesome/pro-solid-svg-icons';
-
-import {
-    faCube
-} from '@fortawesome/pro-regular-svg-icons';
-
 import { 
+    faRulerHorizontal as faHorizontalRule,
+    faCube,
+    faRightLeft as faParagraphRtl,
+    faCameraRetro as faImagePolaroid,
+    
     faAlignCenter,
     faAlignJustify,
     faAlignLeft,

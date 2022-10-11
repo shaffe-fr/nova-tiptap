@@ -503,6 +503,9 @@ export default {
                     }
                 }
             }),
+            Image.configure({
+                inline: Boolean(this.field.imageSettings?.inline),
+            }),
             Dropcursor,
         ];
 
@@ -640,6 +643,12 @@ export default {
         
         a {
             pointer-events: none;
+        }
+
+        p {
+            img {
+                display: inline-block;
+            }
         }
 
         ul {
